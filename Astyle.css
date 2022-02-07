@@ -1,0 +1,397 @@
+html{
+    scroll-behavior: smooth;
+   
+}
+
+
+*{
+  padding: 0pt;
+  margin: 0pt;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body
+{
+
+    
+    overflow-x:hidden;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+
+contacts ul{
+  background: rgb(40, 104, 128);
+  top: 100%;
+  
+}
+
+contacts ul li{
+  display:inline-block;
+  margin-left: 20px;
+  color: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+nav{
+    background-color: rgb(255, 255, 255);
+    height: 90px;
+    width: 100%;
+}
+
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 90px;
+  margin: 0 5px;
+}
+
+.logo img{
+  width: 90px;
+  height: auto;
+  margin: 0px;
+  padding-top: 0px;
+  border: 0px;
+
+}
+
+nav ul li a{
+  color: rgb(40, 104, 128);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+a.active, a.nav:hover{
+  background: rgb(40, 104, 128);
+  color: #f2f2f2;
+  transition: .5s;
+  
+
+}
+
+.checkbtn{
+  font-size: 30px;
+  color: #000000;
+  float: right;
+  line-height: 90px;
+  margin-right: 40px;
+  cursor: pointer;
+  
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width:700px){
+  .logo img{
+    width: 140px;
+    padding-left: 50px;
+    margin-left: -40px;
+  }
+  nav ul li a{
+    font-family: 16px;
+  }
+  contacts ul li{
+    bottom: 100%;
+  }
+}
+
+@media (max-width:700px){
+  .checkbtn{
+    display:block;
+
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top:90px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+    background:rgb(40, 104, 128) ;
+    z-index: 2;
+    
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    
+    
+    
+  }
+  nav ul li a{
+    font-size: 20px;
+    color: #1f1e1e;
+    
+  }
+  a.nav:hover,a.active{
+    background: none;
+    color: rgb(64, 144, 173)71;
+  }
+  #check:checked ~ ul{
+    left:0;
+
+  }
+}
+
+
+.home-container{
+  max-width: 100%;
+  margin: 0 auto;
+  background: azure;
+  font-size: 24px;
+  padding: 0px ;
+  font-family: 'Poppins', sans-serif;
+  
+
+}
+.parallax{
+  min-height: 600px;
+  background:transparent;
+  padding:360px 0 0 0;
+  
+  
+}
+
+
+.info{
+  z-index: 1;
+  position: relative;
+  color: #f2f2f2;
+  font-size: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.0);
+  
+  border-radius: 10px;
+  padding:9px;
+  text-shadow: 0 0 1vw #00000077;
+  text-shadow:
+  0 0 10px rgb(0, 0, 0),
+  0 0 15px rgb(0, 0, 0),
+  0 0 21px rgb(5, 5, 5);
+ 
+}
+
+
+.btn{
+  color: #f2f2f2;
+  position: absolute;
+  background:rgb(40, 104, 128);
+  border-radius: 15px;
+  font-size: 15px;
+  padding: 6px;
+  z-index: 2px;
+  cursor: pointer;
+  align-content: center;
+  
+}
+.btn:hover{
+background: rgb(40, 104, 128);
+  color: #f2f2f2;
+  transition: .5s;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.introduction{
+ 
+  top:100px;
+  color: #000000;
+  width: 100%;
+  text-align: center;
+  height: 300px;
+  position: relative;
+  animation: fade;
+  flex-wrap: nowrap;
+
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card{
+  background:cornsilk;
+  width: 270px;
+  height:400px;
+  margin:10px;
+  border-radius: 18px;
+  text-align: center;
+
+}
+
+.card:hover{
+  transform: scale(1.06);
+  cursor :pointer;
+  transition: all 0.8s ease-in-out;
+  transition: 0.8s ease-out ;
+}
+
+.card-image{
+  background-color: darkkhaki;
+  height: 150px;
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 18px 18px 0 0;
+}
+
+.truck-1{
+  background-image: url(img/img45.JPG);
+
+}
+
+.truck-2{
+  background-image: url(pics/100.jpg);
+
+}
+
+
+.truck-3{
+  background-image: url(pics/CTU-3.jpg);
+
+}
+
+.truck-4{
+  background-image: url(pics/img32.jpg);
+
+}
+
+.truck-5{
+  background-image: url(pics/10.jpg);
+
+}
+
+.card a {
+  background-color: rgb(49, 46, 46);
+  color: #f2f2f2;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin:20px 50px;
+  border-radius: 10px;
+  
+  
+}
+
+.border-container{
+  margin-bottom: 100px;
+  padding-left: 40%;
+  background: linear-gradient(to right, rgb(40, 104, 128) , rgb(100, 192, 199));
+}
+
+.border-line{
+  text-align: center;
+  font-weight: bolder;
+  font-size: larger;
+  background: #f2f2f2;
+  width: 200px;
+ 
+  
+}
+
+
+ @font-face{
+  src: url(fonts/DogtownTypewriter.ttf);
+  font-family:dogtype;
+}
+@font-face{
+  src:url(fonts/MODERNTYPEWRITER.ttf);
+  font-family:modrn;
+}
+
+footer{
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100vw;
+  
+  padding-top: 40px;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3{
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p{
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li{
+  margin: 0 10px;
+}
+.socials a{
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i{
+  font-size: 1.1rem;
+  transition: color .4s ease;
+
+}
+.socials a:hover i{
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p{
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span{
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
