@@ -310,7 +310,8 @@ background: rgb(40, 104, 128);
   font-weight: bolder;
   font-size: larger;
   background: #f2f2f2;
-  width: 200px;
+  width: auto;
+  margin: auto;
  
   
 }
